@@ -4,9 +4,10 @@
     var Foxx = require("org/arangodb/foxx"),
         controller = new Foxx.Controller(applicationContext)
 
-    controller.get("/hello/:name", function(req, res) {
-        res.set("Content-Type", "text/plain");
-        res.body = "Hello " + req.params("name");
+    controller.get("/computations", function(req, res) {
+	var db = require("org/arangodb").db;
+	var c = db.Friends.toArray(); 
+	res.json(c); 
     }); 
 
 }());
