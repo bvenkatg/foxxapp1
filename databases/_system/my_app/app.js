@@ -8,6 +8,5 @@
 	var db = require("org/arangodb").db;
 	var collns = ["Friends","knows"];
 	res.json({result:collns});
-	res.json({result:db._collection("User")});
     }); 
 }());
