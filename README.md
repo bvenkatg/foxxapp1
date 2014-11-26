@@ -1,4 +1,4 @@
-foxxapp1
+my-foxx
 ========
 
-Developing my own foxx apps from the scratch
+Developing my own foxx app from the scratch
